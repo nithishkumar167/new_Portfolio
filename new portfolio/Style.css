@@ -1,0 +1,413 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+
+}
+
+header h1{
+
+    font-size:40px;
+    margin-bottom:15px;
+
+}
+
+nav{
+
+    margin-top:10px;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#38bdf8;
+
+}
+
+/* ===========================
+   Section
+=========================== */
+
+section{
+
+    background:white;
+    width:85%;
+    margin:30px auto;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   Profile
+=========================== */
+
+section:first-of-type{
+
+    text-align:center;
+
+}
+
+section:first-of-type img{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:6px solid #0ea5e9;
+    margin-bottom:20px;
+    object-fit:cover;
+
+}
+
+section:first-of-type h2{
+
+    font-size:35px;
+    color:#0f172a;
+
+}
+
+section:first-of-type p{
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   Headings
+=========================== */
+
+h2{
+
+    color:#0f172a;
+    margin-bottom:20px;
+    border-left:6px solid #0ea5e9;
+    padding-left:12px;
+
+}
+
+h3{
+
+    margin-top:20px;
+    color:#1e3a8a;
+
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+ul,ol{
+
+    margin-left:25px;
+
+}
+
+li{
+
+    margin:10px 0;
+
+}
+
+/* ===========================
+   Table
+=========================== */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#0f172a;
+    color:white;
+    padding:15px;
+
+}
+
+table td{
+
+    padding:15px;
+    text-align:center;
+
+}
+
+table tr:nth-child(even){
+
+    background:#f5f5f5;
+
+}
+
+table tr:hover{
+
+    background:#dbeafe;
+
+}
+
+/* ===========================
+   Contact Form
+=========================== */
+
+form{
+
+    margin-top:20px;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+    padding:14px;
+    margin-top:8px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:#0ea5e9;
+    outline:none;
+
+}
+
+input[type="submit"]{
+
+    background:#0ea5e9;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+
+}
+
+input[type="submit"]:hover{
+
+    background:#0284c7;
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+
+    color:#0ea5e9;
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+
+}
+
+footer p{
+
+    margin:10px;
+
+}
+
+footer a{
+
+    color:#38bdf8;
+
+}
+
+/* ===========================
+   Horizontal Line
+=========================== */
+
+hr{
+
+    display:none;
+
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+section{
+
+    transition:.3s;
+
+}
+
+section:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+header h1{
+
+    font-size:28px;
+
+}
+
+section{
+
+    width:95%;
+
+}
+
+nav a{
+
+    display:block;
+    margin:10px;
+
+}
+
+table{
+
+    font-size:14px;
+
+}
+
+section:first-of-type img{
+
+    width:150px;
+    height:150px;
+
+}
+/* ==========================
+   Skills Section
+========================== */
+
+.skills-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:30px;
+
+}
+
+.skill-card{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    transition:.4s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(56,189,248,.35);
+
+}
+
+.skill-card h3{
+
+    color:#38bdf8;
+    margin-bottom:15px;
+    text-align:center;
+
+}
+
+.skill-card ul{
+
+    list-style:none;
+    padding:0;
+
+}
+
+.skill-card li{
+
+    background:rgba(255,255,255,.10);
+    margin:10px 0;
+    padding:10px;
+    border-radius:8px;
+    transition:.3s;
+
+}
+
+.skill-card li:hover{
+
+    background:#38bdf8;
+    color:white;
+    transform:translateX(8px);
+
+}
+
+
+}
